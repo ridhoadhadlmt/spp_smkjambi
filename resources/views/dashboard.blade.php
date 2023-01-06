@@ -2,7 +2,7 @@
     <x-slot name="main">
         <x-slot name="heading">
             <div class="flex items-center">
-                <div class="bg-rose-500 text-white rounded-xl p-2 mr-2">
+                <div class="bg-pink-500 text-white rounded-xl p-2 mr-2">
                     <i class="fa fa-chart-pie fa-xl"></i>
                 </div>
                 <h3 class="font-bold">Dashboard</h3>
@@ -14,28 +14,28 @@
                 <p class="text-md font-light mb-4">Peserta Didik</p>
                 <p class="text-xl font-bold text-gray-500">{{$student}}</p>
                </div>
-               <div><i class="fa fa-graduation-cap fa-xl text-rose-500"></i></div>
+               <div><i class="fa fa-graduation-cap fa-xl text-pink-500"></i></div>
             </div>
             <div class="bg-white lg:flex flex lg:justify-between justify-between items-center shadow rounded-xl p-4">
                <div class="md:block items-center justify-between">
                 <p class="text-md font-light mb-4">Kompetensi Keahlian</p>
                 <p class="text-xl font-bold text-gray-500">{{$jurusan}}</p>
                </div>
-               <div><i class="fa fa-laptop-code fa-xl text-rose-500"></i></div>
+               <div><i class="fa fa-laptop-code fa-xl text-pink-500"></i></div>
             </div>
             <div class="bg-white lg:flex flex lg:justify-between justify-between items-center shadow rounded-xl p-4">
                <div class="md:block items-center justify-between">
                 <p class="text-md font-light mb-4">Kelas</p>
                 <p class="text-xl font-bold text-gray-500">{{$class}}</p>
                </div>
-               <div><i class="fa fa-chalkboard-user fa-xl text-rose-500"></i></div>
+               <div><i class="fa fa-chalkboard-user fa-xl text-pink-500"></i></div>
             </div>
             <div class="bg-white lg:flex flex lg:justify-between justify-between items-center shadow rounded-xl p-4">
                <div class="md:block items-center justify-between">
                 <p class="text-md font-light mb-4">Pemasukan Bulan Aktif</p>
                 <p class="text-xl font-bold text-gray-500">{{rupiah($transaction)}}</p>
                </div>
-               <div><i class="fa fa-circle-dollar-to-slot fa-xl text-rose-500"></i></div>
+               <div><i class="fa fa-circle-dollar-to-slot fa-xl text-pink-500"></i></div>
             </div>
 
         </div>
@@ -46,7 +46,7 @@
                     <h5 class="font-bold">Transaksi Terakhir</h5>
                 </div>
                 <div class=" mt-4" style="height:355px">
-                    <table class=" table-auto w-full border overflow-hidden rounded-xl">
+                    <table class=" table-auto w-full">
                         <thead class="bg-slate-100 text-white border-b">
                             <th class="font-bold p-2 pl-2 text-gray-500 text-left">#</th>
                             <th class="font-bold p-2 pl-2 text-gray-500 text-left">Tanggal</th>

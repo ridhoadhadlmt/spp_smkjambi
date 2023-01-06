@@ -1,7 +1,7 @@
 @section('title', 'Tabel Transaksi')
 <x-app-layout>
     <x-slot name="heading">
-        <a href="/transaction" class="no-underline text-rose-500 hover:text-rose-700"><i class="fa fa-arrow-left"></i> Kembali</a>
+        <a href="/transaction" class="no-underline text-pink-500 hover:text-pink-700"><i class="fa fa-arrow-left"></i> Kembali</a>
     </x-slot>
     <x-slot name="main" class="">
         <div class="bg-white p-4 shadow rounded-xl">
@@ -241,7 +241,7 @@
                                 <div
                                     class="flex items-center justify-center py-6 space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600">
                                     <a id="btnDelete"
-                                        class="text-white bg-rose-500 hover:bg-rose-600 focus:ring-2 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-md px-6 py-3 text-center">Hapus</a>
+                                        class="text-white bg-pink-500 hover:bg-pink-600 focus:ring-2 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-md px-6 py-3 text-center">Hapus</a>
                                     <button data-modal-toggle="confirmModal" type="button"
                                         class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-2 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-md font-medium px-6 py-3 hover:text-gray-900 focus:z-10 ">Batal</button>
                                 </div>
@@ -253,7 +253,7 @@
 
             <div class="relative">
                 <table class="dataTable table-auto " style="width:100%">
-                    <thead class="bg-rose-500 text-white">
+                    <thead class="bg-pink-500 text-white">
                         <tr>
                             <th class="font-bold p-4 text-left">#</th>
                             <th class="font-bold p-4 text-left">NIS</th>

@@ -1,7 +1,7 @@
 @section('title', 'Mutasi')
 <x-app-layout>
     <x-slot name="heading">
-        <a href="/dashboard" class="no-underline text-rose-500 hover:text-rose-700"><i class="fa fa-arrow-left"></i> Kembali</a>
+        <a href="/dashboard" class="no-underline text-pink-500 hover:text-pink-700"><i class="fa fa-arrow-left"></i> Kembali</a>
     </x-slot>
     <x-slot name="main">
         <div class="bg-white p-6 shadow rounded-xl">
@@ -15,7 +15,7 @@
             </div>
             <div class="w-full">
                 <table class="dataTable" style="width:100%">
-                    <thead class="bg-rose-500 text-white">
+                    <thead class="bg-pink-500 text-white">
                         <tr>
                             <th class="font-bold p-4 text-left">#</th>
                             <th class="font-bold p-4 text-left">Nis</th>

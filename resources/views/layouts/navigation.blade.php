@@ -8,7 +8,7 @@
                     <div>
                         <x-application-logo class="block h-4 w-auto fill-current text-gray-600" />
                     </div>
-                    <div class="font-bold ml-4">SMKS JAMBI Medan</div>
+                    <div class="font-bold ml-4">Literasia Edutekno</div>
                 </a>
             </div>
             <div class="flex">
@@ -55,7 +55,7 @@
                                 {{ Auth::user()->name }}
                                 </div>
                             </div>
-                            <x-dropdown-link class="no-underline hover:text-rose-500" :href="route('logout')" onclick="event.preventDefault();
+                            <x-dropdown-link class="no-underline hover:text-pink-500" :href="route('logout')" onclick="event.preventDefault();
                                                 this.closest('form').submit();">
                                 {{ __('Log Out') }}
                             </x-dropdown-link>

@@ -1,7 +1,7 @@
 @section('title', 'Rekap Laporan')
 <x-app-layout>
     <x-slot name="heading">
-        <a href="/dashboard" class="no-underline text-rose-500 hover:text-rose-700"><i class="fa fa-arrow-left"></i>
+        <a href="/dashboard" class="no-underline text-pink-500 hover:text-pink-700"><i class="fa fa-arrow-left"></i>
             Kembali</a>
     </x-slot>
     <x-slot name="main">

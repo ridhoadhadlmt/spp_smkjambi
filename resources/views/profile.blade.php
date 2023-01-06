@@ -1,7 +1,7 @@
 @section('title', 'Profile Sekolah')
 <x-app-layout>
     <x-slot name="heading">
-        <a href="/dashboard" class="no-underline text-rose-500 hover:text-rose-700"><i class="fa fa-arrow-left"></i> Kembali</a>
+        <a href="/dashboard" class="no-underline text-pink-500 hover:text-pink-700"><i class="fa fa-arrow-left"></i> Kembali</a>
     </x-slot>
     <x-slot name="main">
         @if ($errors->any())
@@ -26,7 +26,7 @@
                 <div class="flex justify-center">
                     <img src='{{asset("logo").'/'.$user->school->logo}}' alt="">
                 </div>
-                <div class="text-center text-lg font-semibold">SMK Swasta Jambi Medan</div>
+                <div class="text-center text-lg font-semibold">PT. Literasia Edutekno Digital</div>
             </div>
             <form action="{{ route('profile.update') }}" method="post" enctype="multipart/form-data">
                 <!-- <h3>Profile Sekolah</h3> -->

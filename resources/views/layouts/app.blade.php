@@ -38,18 +38,22 @@
 
             <div class="dark:bg-gray-800">
                 <div class="shrink-0 flex px-3 mb-2 h-16">
-                    <a href="{{ route('dashboard') }}" class="flex no-underline items-center text-black">
-                        <div>
+                    <a href="{{ route('dashboard') }}" class="flex no-underline items-center text-black w-full">
+                        <div class="w-2/12 mr-2">
                             <x-application-logo class="block h-4 w-auto fill-current text-gray-600" />
                         </div>
-                        <div class="font-bold ml-4">SMKS JAMBI Medan</div>
+                        <div  class="w-10/12">
+                            <img src="{{ asset('img/logo/logo_text.png') }}" class="w-24" alt="">
+
+                        </div>
+                        <!-- <div class="font-bold ml-4 text-pink-500">Literasia</div> -->
                     </a>
                 </div>
                 <ul class="space-y-2 pl-0">
                     <li class="relative pl-0 pr-3">
-                        <!-- <span class="absolute inset-y-0 left-0 w-1 bg-rose-500 rounded-tr-lg rounded-br-lg"></span> -->
+                        <!-- <span class="absolute inset-y-0 left-0 w-1 bg-pink-500 rounded-tr-lg rounded-br-lg"></span> -->
                         <a href="/dashboard"
-                            class="{{ request()->is('dashboard') ? 'bg-rose-500 flex items-center no-underline p-2 pl-4 text-base font-normal text-white rounded-r-xl dark:text-white dark:hover:bg-gray-700 transition duration-700 ease-in-out' : 'flex items-center no-underline hover:bg-gray-100 p-2 pl-4 text-base font-normal text-gray-500 hover:text-gray-700 rounded-r-xl dark:text-white dark:hover:bg-gray-700 transition duration-700 ease-in-out' }}">
+                            class="{{ request()->is('dashboard') ? 'bg-pink-500 flex items-center no-underline p-2 pl-4 text-base font-normal text-white rounded-r-xl dark:text-white dark:hover:bg-gray-700 transition duration-700 ease-in-out' : 'flex items-center no-underline hover:bg-gray-100 p-2 pl-4 text-base font-normal text-gray-500 hover:text-gray-700 rounded-r-xl dark:text-white dark:hover:bg-gray-700 transition duration-700 ease-in-out' }}">
                             <span class="w-5 h-5 flex items-center justify-center"><i
                                     class="fa fa-chart-pie"></i></span>
                             <span class="ml-3">Dashboard</span>
@@ -73,11 +77,11 @@
                             <ul id="setting" class="hidden py-2 space-y-2">
                                 <li>
                                     <a href="/classes"
-                                        class="{{ request()->is('classes') ? 'bg-rose-500 flex items-center no-underline p-2 pl-11 text-base font-normal text-white rounded-r-xl dark:text-white dark:hover:bg-gray-700' : 'flex items-center no-underline hover:bg-gray-100 p-2 pl-11 text-base font-normal text-gray-500 hover:text-gray-700 rounded-r-xl dark:text-white dark:hover:bg-gray-700 transition duration-700 ease-in-out' }}">Kelas</a>
+                                        class="{{ request()->is('classes') ? 'bg-pink-500 flex items-center no-underline p-2 pl-11 text-base font-normal text-white rounded-r-xl dark:text-white dark:hover:bg-gray-700' : 'flex items-center no-underline hover:bg-gray-100 p-2 pl-11 text-base font-normal text-gray-500 hover:text-gray-700 rounded-r-xl dark:text-white dark:hover:bg-gray-700 transition duration-700 ease-in-out' }}">Kelas</a>
                                 </li>
                                 <li>
                                     <a href="/period"
-                                        class="{{ request()->is('period') ? 'bg-rose-500 flex items-center no-underline p-2 pl-11 text-base font-normal text-white rounded-r-xl dark:text-white dark:hover:bg-gray-700' : 'flex items-center no-underline hover:bg-gray-100 p-2 pl-11 text-base font-normal text-gray-500 hover:text-gray-700 rounded-r-xl dark:text-white dark:hover:bg-gray-700 transition duration-700 ease-in-out' }}">Periode</a>
+                                        class="{{ request()->is('period') ? 'bg-pink-500 flex items-center no-underline p-2 pl-11 text-base font-normal text-white rounded-r-xl dark:text-white dark:hover:bg-gray-700' : 'flex items-center no-underline hover:bg-gray-100 p-2 pl-11 text-base font-normal text-gray-500 hover:text-gray-700 rounded-r-xl dark:text-white dark:hover:bg-gray-700 transition duration-700 ease-in-out' }}">Periode</a>
                                 </li>
                             </ul>
                         </li>
@@ -85,7 +89,7 @@
 
                     <li class="pl-0 pr-3">
                         <a href="/student"
-                            class="{{ request()->is('student') ? 'bg-rose-500 flex items-center no-underline p-2 pl-4 text-base font-normal text-white rounded-r-xl dark:text-white dark:hover:bg-gray-700' : 'flex items-center no-underline hover:bg-gray-100 p-2 pl-4 text-base font-normal text-gray-500 hover:text-gray-700 rounded-r-xl dark:text-white dark:hover:bg-gray-700' }}">
+                            class="{{ request()->is('student') ? 'bg-pink-500 flex items-center no-underline p-2 pl-4 text-base font-normal text-white rounded-r-xl dark:text-white dark:hover:bg-gray-700' : 'flex items-center no-underline hover:bg-gray-100 p-2 pl-4 text-base font-normal text-gray-500 hover:text-gray-700 rounded-r-xl dark:text-white dark:hover:bg-gray-700' }}">
                             <span class="w-5 h-5 flex items-center justify-center"><i class="fa fa-user"></i></span>
                             <span class="flex-1 ml-3 whitespace-nowrap">Data Siswa</span>
                         </a>
@@ -108,17 +112,17 @@
                         <ul id="transaction" class="hidden py-2 space-y-2">
                             <li>
                                 <a href="/mutation"
-                                    class="{{ request()->is('mutation') ? 'bg-rose-500 flex items-center no-underline p-2 pl-11 text-base font-normal text-white rounded-r-xl dark:text-white dark:hover:bg-gray-700' : 'flex items-center no-underline hover:bg-gray-100 p-2 pl-11 text-base font-normal text-gray-500 hover:text-gray-700 rounded-r-xl dark:text-white dark:hover:bg-gray-700 transition duration-700 ease-in-out' }}">Mutasi</a>
+                                    class="{{ request()->is('mutation') ? 'bg-pink-500 flex items-center no-underline p-2 pl-11 text-base font-normal text-white rounded-r-xl dark:text-white dark:hover:bg-gray-700' : 'flex items-center no-underline hover:bg-gray-100 p-2 pl-11 text-base font-normal text-gray-500 hover:text-gray-700 rounded-r-xl dark:text-white dark:hover:bg-gray-700 transition duration-700 ease-in-out' }}">Mutasi</a>
                             </li>
                             <li>
                                 <a href="/transaction"
-                                    class="{{ request()->is('transaction') ? 'bg-rose-500 flex items-center no-underline p-2 pl-11 text-base font-normal text-white rounded-r-xl dark:text-white dark:hover:bg-gray-700' : 'flex items-center no-underline hover:bg-gray-100 p-2 pl-11 text-base font-normal text-gray-500 hover:text-gray-700 rounded-r-xl dark:text-white dark:hover:bg-gray-700 transition duration-700 ease-in-out' }}">Pembayaran</a>
+                                    class="{{ request()->is('transaction') ? 'bg-pink-500 flex items-center no-underline p-2 pl-11 text-base font-normal text-white rounded-r-xl dark:text-white dark:hover:bg-gray-700' : 'flex items-center no-underline hover:bg-gray-100 p-2 pl-11 text-base font-normal text-gray-500 hover:text-gray-700 rounded-r-xl dark:text-white dark:hover:bg-gray-700 transition duration-700 ease-in-out' }}">Pembayaran</a>
                             </li>
                         </ul>
                     </li>
                     <li class="pl-0 pr-3">
                         <a href="/report"
-                            class="{{ request()->is('report') ? 'bg-rose-500 flex items-center no-underline p-2 pl-4 text-base font-normal text-white rounded-r-xl dark:text-white dark:hover:bg-gray-700' : 'flex items-center no-underline hover:bg-gray-100 p-2 pl-4 text-base font-normal text-gray-500 hover:text-gray-700 rounded-r-xl dark:text-white dark:hover:bg-gray-700' }}">
+                            class="{{ request()->is('report') ? 'bg-pink-500 flex items-center no-underline p-2 pl-4 text-base font-normal text-white rounded-r-xl dark:text-white dark:hover:bg-gray-700' : 'flex items-center no-underline hover:bg-gray-100 p-2 pl-4 text-base font-normal text-gray-500 hover:text-gray-700 rounded-r-xl dark:text-white dark:hover:bg-gray-700' }}">
                             <span class="w-5 h-5 flex items-center justify-center"><i class="fa fa-print"></i></span>
                             <span class="flex-1 ml-3 whitespace-nowrap">Laporan</span>
                         </a>
@@ -127,7 +131,7 @@
                     @can('isAdmin')
                         <li class="pl-0 pr-3">
                             <a href="{{ route('user') }}"
-                                class="{{ request()->is('user') ? 'bg-rose-500 flex items-center no-underline p-2 pl-4 text-base font-normal text-white rounded-r-xl dark:text-white dark:hover:bg-gray-700' : 'flex items-center no-underline hover:bg-gray-100 p-2 pl-4 text-base font-normal text-gray-500 hover:text-gray-700 rounded-r-xl dark:text-white dark:hover:bg-gray-700' }}">
+                                class="{{ request()->is('user') ? 'bg-pink-500 flex items-center no-underline p-2 pl-4 text-base font-normal text-white rounded-r-xl dark:text-white dark:hover:bg-gray-700' : 'flex items-center no-underline hover:bg-gray-100 p-2 pl-4 text-base font-normal text-gray-500 hover:text-gray-700 rounded-r-xl dark:text-white dark:hover:bg-gray-700' }}">
                                 <span class="w-5 h-5 flex items-center justify-center"><i class="fa fa-users"></i></span>
                                 <span class="flex-1 ml-3 whitespace-nowrap">Operator</span>
                             </a>
@@ -137,7 +141,7 @@
                     @can('isAdmin')
                         <li class="pl-0 pr-3">
                             <a href="{{ route('profile') }}"
-                                class="{{ request()->is('profile') ? 'bg-rose-500 flex items-center no-underline p-2 pl-4 text-base font-normal text-white rounded-r-xl dark:text-white dark:hover:bg-gray-700' : 'flex items-center no-underline hover:bg-gray-100 p-2 pl-4 text-base font-normal text-gray-500 hover:text-gray-700 rounded-r-xl dark:text-white dark:hover:bg-gray-700' }} ">
+                                class="{{ request()->is('profile') ? 'bg-pink-500 flex items-center no-underline p-2 pl-4 text-base font-normal text-white rounded-r-xl dark:text-white dark:hover:bg-gray-700' : 'flex items-center no-underline hover:bg-gray-100 p-2 pl-4 text-base font-normal text-gray-500 hover:text-gray-700 rounded-r-xl dark:text-white dark:hover:bg-gray-700' }} ">
                                 <span class="w-5 h-5 flex items-center justify-center"><i class="fa fa-school"></i></span>
                                 <span class="flex-1 ml-3 whitespace-nowrap">Profile Sekolah</span>
                             </a>

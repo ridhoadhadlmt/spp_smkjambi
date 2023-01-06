@@ -52,19 +52,19 @@
                             @csrf
 
                             <div>
-                                <input id="email" class="w-full border-2 font-light rounded-xl border-slate-100 focus:border-rose-300 focus:ring-1 focus:ring-rose-500 focus:ring-opacity-50" type="text" placeholder="Email" type="email" name="email" :value="old('email')" required autofocus>
+                                <input id="email" class="w-full border-2 font-light rounded-xl border-slate-100 focus:border-pink-300 focus:ring-1 focus:ring-pink-500 focus:ring-opacity-50" type="text" placeholder="Email" type="email" name="email" :value="old('email')" required autofocus>
 
                             </div>
 
                             <div class="mt-4">
 
-                                <input id="password" class="w-full border-2 font-light rounded-xl border-slate-100 focus:border-rose-300 focus:ring-1 focus:ring-rose-500 focus:ring-opacity-50" type="password" placeholder="Password" type="password" name="password" :value="old('password')" required autocomplete="current-password">
+                                <input id="password" class="w-full border-2 font-light rounded-xl border-slate-100 focus:border-pink-300 focus:ring-1 focus:ring-pink-500 focus:ring-opacity-50" type="password" placeholder="Password" type="password" name="password" :value="old('password')" required autocomplete="current-password">
 
                             </div>
 
                             <div class="block mt-4">
                                 <label for="remember_me" class="inline-flex items-center">
-                                    <input id="remember_me" type="checkbox" class="rounded border-2 border-slate-100 text-rose-600 focus:ring-rose-200 focus:ring-opacity-0" name="remember">
+                                    <input id="remember_me" type="checkbox" class="rounded border-2 border-slate-100 text-pink-600 focus:ring-pink-200 focus:ring-opacity-0" name="remember">
                                     <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
                                 </label>
                             </div>
@@ -82,7 +82,7 @@
 
                 </div>
             </div>
-            <div class="md:w-8/12 md:block sm:hidden bg-no-repeat bg-center bg-cover" style="background-image:url('img/hero.jpg')">
+            <div class="md:w-8/12 md:block sm:hidden bg-pink-500">
 
             </div>
         </div>

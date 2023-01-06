@@ -1,7 +1,7 @@
 @section('title', 'Tabel Siswa')
 <x-app-layout>
     <x-slot name="heading">
-        <a href="/student" class="no-underline text-rose-500 hover:text-rose-700"><i class="fa fa-arrow-left"></i> Kembali</a>
+        <a href="/student" class="no-underline text-pink-500 hover:text-pink-700"><i class="fa fa-arrow-left"></i> Kembali</a>
     </x-slot>
     <x-slot name="main" class="">
         @if ($errors->any())
@@ -398,7 +398,7 @@
                                 <div
                                     class="flex items-center justify-center py-6 space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600">
                                     <a id="btnDelete"
-                                        class="text-white bg-rose-500 hover:bg-rose-600 focus:ring-2 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-md px-6 py-3 text-center">Hapus</a>
+                                        class="text-white bg-pink-500 hover:bg-pink-600 focus:ring-2 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-md px-6 py-3 text-center">Hapus</a>
                                     <button data-modal-toggle="confirmModal" type="button"
                                         class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-2 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-md font-medium px-6 py-3 hover:text-gray-900 focus:z-10 ">Batal</button>
                                 </div>
@@ -410,7 +410,7 @@
 
             <div class="relative ">
                 <table class="dataTable table-auto" style="width:100%">
-                    <thead class="bg-rose-500 text-white">
+                    <thead class="bg-pink-500 text-white">
                         <tr>
                             {{-- <th class="font-bold p-4 pl-4 text-gray-500 text-left">#</th> --}}
                             <th class="font-bold p-4 pl-4 text-left">No</th>
@@ -445,7 +445,7 @@
                                         data-modal-toggle="editModal" data-url={{ url('/') }}
                                         data-id="{{ $data->id }}"><i class="fa-solid w-4 h-4 fa-pen-to-square"></i></button>
                                     <button
-                                        class="btnConfirm bg-rose-500 font-light rounded-lg text-white hover:bg-rose-600 focus:ring-2 focus:ring-sky-300 py-1 px-2 mx-2"
+                                        class="btnConfirm bg-pink-500 font-light rounded-lg text-white hover:bg-pink-600 focus:ring-2 focus:ring-sky-300 py-1 px-2 mx-2"
                                         data-modal-toggle="confirmModal"
                                         data-href="{{ url('student/delete') . '/' . $data->id }}"><i
                                             class="fa-solid w-4 h-4 fa-trash"></i></button>
