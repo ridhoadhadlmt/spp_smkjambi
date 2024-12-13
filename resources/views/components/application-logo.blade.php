@@ -4,7 +4,7 @@
 
 @php
     if(Auth::check()) {
-        $logo = asset('logo').'/'.auth()->user()->school->logo;
+        $logo = asset('img/logo').'/'.auth()->user()->school->logo;
     } else {
         $logo = asset('img/logo/logo.png');
     }

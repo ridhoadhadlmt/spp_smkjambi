@@ -43,10 +43,8 @@
                             <x-application-logo class="block h-4 w-auto fill-current text-gray-600" />
                         </div>
                         <div  class="w-10/12">
-                            <img src="{{ asset('img/logo/logo_text.png') }}" class="w-24" alt="">
-
+                            <div class="font-bold ml-4 text-pink-500">SMK JAMBI</div>
                         </div>
-                        <!-- <div class="font-bold ml-4 text-pink-500">Literasia</div> -->
                     </a>
                 </div>
                 <ul class="space-y-2 pl-0">

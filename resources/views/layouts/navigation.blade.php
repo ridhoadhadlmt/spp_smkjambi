@@ -8,7 +8,7 @@
                     <div>
                         <x-application-logo class="block h-4 w-auto fill-current text-gray-600" />
                     </div>
-                    <div class="font-bold ml-4">Literasia Edutekno</div>
+                    <div class="font-bold ml-4">SMK JAMBI</div>
                 </a>
             </div>
             <div class="flex">
